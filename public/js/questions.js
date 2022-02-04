@@ -1,0 +1,16 @@
+let questions = [
+  "O que é",
+  "Quero saber o que significa",
+  "Não sei o que significa",
+  "Definição",
+  "Podes explicar o que significa",
+  "Não percebo bem no que consiste",
+  "Preciso de ajuda porque não sei o que é",
+  "Preciso de informações sobre o significado de",
+  "Não consigo entender o que quer dizer",
+  "Para que serve",
+  "O que faz",
+  "O que são",
+  "Qual a função de",
+  "Explicação",
+];
