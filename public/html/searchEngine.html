@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Atena</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/logoTemp.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="searchTop" class="searchTop">
+        <div id="wrapNameWebPage" class="wrapNameWebPage">
+            <div id="nameWebPage" class="nameWebPage">ATENA</div>
+        </div>
+        <div id="wrapSearchBar" class="wrapSearchBar">
+            <div id="searchBar" class="searchBar">
+                <input id="search" type="text" placeholder="Pesquisar" />
+                <div id="suggestions" class="suggestions"></div>
+                <div id="searchIcon" class="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div id="wrapNoMatch" class="wrapNoMatch">
+            <pre id="noMatch" class="noMatch">
+Pesquisa não disponível
+Tente reformular a sua pergunta ou
+submeta para futura adição</pre>
+            <button id="submitButton" class="submitButton unselectable">
+                Submeter
+            </button>
+        </div>
+    </div>
+    <div id="wrapSearchResult" class="wrapSearchResult fadeInTop">
+        <div id="wrapContent1" class="wrapContent1 fadeInTop">
+            <div id="wrapContent2" class="wrapContent2 fadeInTop">
+                <div id="content" class="content">
+                    <div id="wrapTopBar" class="wrapTopBar">
+                        <div id="wrapTitle" class="wrapTitle">
+                            <span class="far fa-lightbulb" style="
+                    vertical-align: middle;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    color: #62ccc3;
+                    font-size: 2.5vh;
+                  "></span>
+                            <div id="title" class="title fadeInTop"></div>
+                        </div>
+                        <div id="wrapContentButtons" class="wrapContentButtons">
+                            <i id="goBack" class="fas fa-arrow-left" style="
+                    padding: 2px;
+                    margin: 2px;
+                    margin-top: 0px;
+                    border: 3px solid #62ccc3;
+                    border-radius: 5px;
+                  "></i>
+                            <i id="goForward" class="fas fa-arrow-right" style="
+                    padding: 2px;
+                    margin: 2px;
+                    margin-top: 0px;
+                    border: 3px solid #62ccc3;
+                    border-radius: 5px;
+                  "></i>
+                            <i id="closeSearch" class="fas fa-times" style="
+                    padding: 2px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    margin: 2px;
+                    margin-top: 0px;
+                    border: 3px solid #62ccc3;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                  "></i>
+                        </div>
+                    </div>
+                    <div id="description" class="description fadeInTop"></div>
+                    <div style="
+                font-size: 3vh;
+                color: #62ccc3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-left: outset;
+                border-right: outset;
+              " class="unselectable">
+                        <i id="plus" class="far fa-plus-square"></i>
+                        <span id="depth" class="depth">1</span>
+                        <i id="minus" class="far fa-minus-square"></i>
+                    </div>
+                    <div id="wrapRelated" class="wrapRelated">
+                        <constellation id="constellation" class="constellation">
+                        </constellation>
+                    </div>
+                    <div style="
+                font-size: 3vh;
+                color: #62ccc3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: outset;
+              " class="unselectable">
+                        <i id="zoomIn" class="fas fa-search-plus"></i>
+                        <span id="zoom" class="zoom">100%</span>
+                        <i id="zoomOut" class="fas fa-search-minus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="searchBottom" class="searchBottom">
+        <div style="height: 70%; width: auto"></div>
+        <div id="logoCleva" class="logoCleva">
+            <img src="../images/logo1.png" alt="logoCleva" />
+        </div>
+    </div>
+
+    <script src="../js/questions.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/visualizacoes.js"></script>
+    <script src="../js/client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/newQuestions.txt"></script>
+</body>
+
+</html>
